@@ -1,0 +1,51 @@
+Abbr,State,Region,Population 2000,Population 2010,Area (km2),Cumulative Pop,Current Reps,Reps 2012,Electoral College Votes 2012,1k People Per Electoral Vote 2012,% of Electoral College,Scaled Diameter,fips_state,assoc_press,standard_federal_region,census_region,census_division,circuit_court
+AK,Alaska,Pacific,626932,710231,1717854,0.23%,1,1,3,237,0.56%,48,2,Alaska,X,4,Pacific,9
+AL,Alabama,The South,4447100,4779736,135765,1.78%,7,7,9,531,1.67%,123,1,Ala.,IV,3,East South Central,11
+AR,Arkansas,The South,2673400,2915918,137732,2.73%,4,4,6,486,1.12%,96,5,Ark.,VI,3,West South Central,8
+AZ,Arizona,South West,5130632,6392017,295254,4.80%,8,9,11,581,2.04%,143,4,Ariz.,IX,4,Mountain,9
+CA,California,West Coast,33871648,37253956,423970,16.89%,53,53,55,677,10.22%,344,6,Calif.,IX,4,Pacific,9
+CO,Colorado,Rocky Mountains,4301261,5029196,269601,18.52%,7,7,9,559,1.67%,127,8,Colo.,VIII,4,Mountain,10
+CT,Connecticut,New England,3405565,3702379,14357,19.72%,5,5,7,529,1.30%,109,9,Conn.,I,1,New England,2
+DE,Delaware,Mid-Atlantic,783600,897934,6447,20.01%,1,1,3,299,0.56%,53,10,Del.,III,3,South Atlantic,3
+FL,Florida,The South,15982378,18801310,170304,26.11%,25,27,29,648,5.39%,245,12,Fla.,IV,3,South Atlantic,11
+GA,Georgia,The South,8186453,9687653,153909,29.25%,13,14,16,605,2.97%,176,13,Ga.,IV,3,South Atlantic,11
+HI,Hawaii,Pacific,1211537,1360301,28311,29.69%,2,2,4,340,0.74%,66,15,Hawaii,IX,4,Pacific,9
+IA,Iowa,Midwest,2926324,3046355,145743,30.68%,5,4,6,508,1.12%,98,19,Iowa,VII,2,West North Central,8
+ID,Idaho,Rocky Mountains,1293953,1567582,216446,31.19%,2,2,4,392,0.74%,71,16,Idaho,X,4,Mountain,9
+IL,Illinois,Midwest,12419293,12830632,149998,35.35%,19,18,20,642,3.72%,202,17,Ill.,V,2,East North Central,7
+IN,Indiana,Midwest,6080485,6483802,94321,37.45%,9,9,11,589,2.04%,144,18,Ind.,V,2,East North Central,7
+KS,Kansas,Great Plains,2688418,2853118,213096,38.38%,4,4,6,476,1.12%,95,20,Kan.,VII,2,West North Central,10
+KY,Kentucky,The South,4041769,4339367,104659,39.79%,6,6,8,542,1.49%,118,21,Ky.,IV,3,East South Central,6
+LA,Louisiana,The South,4468976,4533372,134264,41.26%,7,6,8,567,1.49%,120,22,La.,VI,3,West South Central,5
+MA,Massachusetts,New England,6349097,6547629,27336,43.38%,10,9,11,595,2.04%,144,25,Mass.,I,1,New England,1
+MD,Maryland,Mid-Atlantic,5296486,5773552,32133,45.25%,8,8,10,577,1.86%,136,24,Md.,III,3,South Atlantic,4
+ME,Maine,New England,1274923,1328361,91646,45.69%,2,2,4,332,0.74%,65,23,Maine,I,1,New England,1
+MI,Michigan,Midwest,9938444,9883640,250494,48.89%,15,14,16,618,2.97%,177,26,Mich.,V,2,East North Central,6
+MN,Minnesota,Midwest,4919479,5303925,225171,50.61%,8,8,10,530,1.86%,130,27,Minn.,V,2,West North Central,8
+MO,Missouri,Midwest,5595211,5988927,180533,52.55%,9,8,10,599,1.86%,138,29,Mo.,VII,2,West North Central,8
+MS,Mississippi,The South,2844658,2967297,125434,53.52%,4,4,6,495,1.12%,97,28,Miss.,IV,3,East South Central,5
+MT,Montana,Rocky Mountains,902195,989415,380838,53.84%,1,1,3,330,0.56%,56,30,Mont.,VIII,4,Mountain,9
+NC,North Carolina,The South,8049313,9535483,139389,56.93%,13,13,15,636,2.79%,174,37,N.C.,IV,3,South Atlantic,4
+ND,North Dakota,Great Plains,642200,672591,183112,57.15%,1,1,3,224,0.56%,46,38,N.D.,VIII,2,West North Central,8
+NE,Nebraska,Great Plains,1711263,1826341,200345,57.74%,3,3,5,365,0.93%,76,31,Neb.,VII,2,West North Central,8
+NH,New Hampshire,New England,1235786,1316470,24216,58.17%,2,2,4,329,0.74%,65,33,N.H.,I,1,New England,1
+NJ,New Jersey,Mid-Atlantic,8414350,8791894,22588,61.02%,13,12,14,628,2.60%,167,34,N.J.,II,1,Mid-Atlantic,3
+NM,New Mexico,South West,1819046,2059179,314915,61.69%,3,3,5,412,0.93%,81,35,N.M.,VI,4,Mountain,10
+NV,Nevada,South West,1998257,2700551,286351,62.56%,3,4,6,450,1.12%,93,32,Nev.,IX,4,Mountain,9
+NY,New York,Mid-Atlantic,18976457,19378102,141299,68.85%,29,27,29,668,5.39%,248,36,N.Y.,II,1,Mid-Atlantic,2
+OH,Ohio,Midwest,11353140,11536504,116096,72.59%,18,16,18,641,3.35%,192,39,Ohio,V,2,East North Central,6
+OK,Oklahoma,The South,3450654,3751351,181035,73.81%,5,5,7,536,1.30%,109,40,Okla.,VI,3,West South Central,10
+OR,Oregon,West Coast,3421399,3831074,254805,75.05%,5,5,7,547,1.30%,110,41,Ore.,X,4,Pacific,9
+PA,Pennsylvania,Mid-Atlantic,12281054,12702379,119283,79.17%,19,18,20,635,3.72%,201,42,Pa.,III,1,Mid-Atlantic,3
+RI,Rhode Island,New England,1048319,1052567,4002,79.51%,2,2,4,263,0.74%,58,44,R.I.,I,1,New England,1
+SC,South Carolina,The South,4012012,4625364,82932,81.02%,6,7,9,514,1.67%,121,45,S.C.,IV,3,South Atlantic,4
+SD,South Dakota,Great Plains,754844,814180,199731,81.28%,1,1,3,271,0.56%,51,46,S.D.,VIII,2,West North Central,8
+TN,Tennessee,The South,5689283,6346105,109151,83.34%,9,9,11,577,2.04%,142,47,Tenn.,IV,3,East South Central,6
+TX,Texas,The South,20851820,25145561,695621,91.49%,32,36,38,662,7.06%,283,48,Texas,VI,3,West South Central,5
+UT,Utah,South West,2233169,2763885,219887,92.39%,3,4,6,461,1.12%,94,49,Utah,VIII,4,Mountain,10
+VA,Virginia,The South,7078515,8001024,110785,94.99%,11,11,13,615,2.42%,160,51,Va.,III,3,South Atlantic,4
+VT,Vermont,New England,608827,625741,24901,95.19%,1,1,3,209,0.56%,45,50,Vt.,I,1,New England,2
+WA,Washington,West Coast,5894121,6724540,184665,97.37%,9,10,12,560,2.23%,146,53,Wash.,X,4,Pacific,9
+WI,Wisconsin,Midwest,5363675,5686986,169639,99.22%,8,8,10,569,1.86%,135,55,Wis.,V,2,East North Central,7
+WV,West Virginia,The South,1808344,1852994,62755,99.82%,3,3,5,371,0.93%,77,54,W.Va.,III,3,South Atlantic,4
+WY,Wyoming,Rocky Mountains,493782,563626,253336,100.00%,1,1,3,188,0.56%,42,56,Wyo.,VIII,4,Mountain,10
