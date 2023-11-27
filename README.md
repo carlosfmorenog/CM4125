@@ -10,5 +10,5 @@ Data Visualisation (RGU BSc Course)
     T7 Time Series Data and Bar Chart Races
     T8 Maps & Other Plots
     T9 Part 1 WikiData
-	T9 Part 2 Data Scraping (offline)
+	T9 Part 2 Data Scraping
     T10 Sankey & Chord
