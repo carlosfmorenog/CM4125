@@ -1,2 +1,0 @@
-Sankey: https://www.kaggle.com/code/carlosmorenogarcia/sankey
-Chord: https://www.kaggle.com/code/carlosmorenogarcia/chord
