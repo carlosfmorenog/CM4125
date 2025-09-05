@@ -1,6 +1,5 @@
 # CM4125
-Data Visualisation (RGU BSc Course, 4th Year) 
-2024
+Data Visualisation (RGU BSc Course, 4th Year) 2025
 
     T1 Introduction
 	T2 Option 1, WikiData
