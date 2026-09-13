@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pastafarian Plots</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f0f8f4;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 32px 16px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .plots-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .plot-card {
+      background: #fff;
+      border: 1px solid #cce3d6;
+      border-radius: 6px;
+      padding: 24px 20px 16px;
+      flex: 1 1 420px;
+      max-width: 560px;
+    }
+
+    .plot-title {
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #c0392b;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .chart-subtitle {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    .canvas-wrap {
+      position: relative;
+      height: 320px;
+    }
+
+    canvas { display: block; }
+
+    .note {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.72rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pastafarian Evidence: Pirates &amp; Global Temperature</h1>
+
+<div class="plots-row">
+
+  <!-- PLOT 1 -->
+  <div class="plot-card">
+    <div class="plot-title">Pastafarian Plot 1</div>
+    <div class="chart-subtitle">Global Average Temperature vs. Number of Pirates</div>
+    <div class="canvas-wrap">
+      <canvas id="plot1"></canvas>
+    </div>
+  </div>
+
+  <!-- PLOT 2 -->
+  <div class="plot-card">
+    <div class="plot-title">Pastafarian Plot 2</div>
+    <div class="chart-subtitle">Temperature &amp; Pirates over Time</div>
+    <div class="canvas-wrap">
+      <canvas id="plot2"></canvas>
+    </div>
+  </div>
+
+</div>
+
+<p class="note">
+  Hover over any data point for values. &nbsp;|&nbsp;
+  Source: Church of the Flying Spaghetti Monster (Bobby Henderson, 2005)
+</p>
+
+<script>
+  // ── Raw data ─────────────────────────────────────────────────────────────
+  const years   = [1820, 1860, 1880, 1920, 1940, 1980, 2000];
+  const pirates = [35000, 45000, 20000, 15000, 5000, 400, 17];
+  const temps   = [14.25, 14.27, 14.60, 14.90, 15.26, 15.52, 15.99];
+
+  // ── Shared teal/green fill for Plot 1 background ─────────────────────────
+  function tealGradient(ctx, chartArea) {
+    const grad = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+    grad.addColorStop(0, 'rgba(144, 210, 185, 0.55)');
+    grad.addColorStop(1, 'rgba(200, 235, 220, 0.25)');
+    return grad;
+  }
+
+  // Custom plugin: draw year labels next to each point
+  const yearLabelPlugin = {
+    id: 'yearLabels',
+    afterDatasetsDraw(chart) {
+      const { ctx } = chart;
+      const meta = chart.getDatasetMeta(0);
+      meta.data.forEach((point, i) => {
+        ctx.save();
+        ctx.font = '11px Segoe UI, Arial';
+        ctx.fillStyle = '#2c3e50';
+        ctx.fillText(years[i], point.x + 6, point.y - 6);
+        ctx.restore();
+      });
+    }
+  };
+
+  new Chart(document.getElementById('plot1'), {
+    type: 'line',
+    plugins: [yearLabelPlugin],
+    data: {
+      datasets: [{
+        data: pirates.map((p, i) => ({ x: p, y: temps[i] })),
+        borderColor: '#4fa882',
+        borderWidth: 2.5,
+        pointBackgroundColor: '#2e7d59',
+        pointRadius: 7,
+        pointHoverRadius: 10,
+        tension: 0.35,
+        fill: true,
+        backgroundColor: function(ctx) {
+          const chart = ctx.chart;
+          const { chartArea } = chart;
+          if (!chartArea) return 'rgba(144,210,185,0.3)';
+          return tealGradient(chart.ctx, chartArea);
+        }
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => 'Year: ' + years[items[0].dataIndex],
+            label: (item) =>
+              `Pirates: ${item.parsed.x.toLocaleString()}  |  Temp: ${item.parsed.y}°C`
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear',             // numeric axis — causes descending order & cramped points
+          reverse: true,              // high→low left-to-right, so 1820 appears left of 1860
+          title: { display: true, text: 'Number of Pirates (Approximate)', color: '#333', font: { size: 12 } },
+          grid: { color: '#c8ddd4' },
+          ticks: { color: '#333', callback: v => v.toLocaleString() }
+        },
+        y: {
+          min: 13,
+          max: 16.5,
+          title: { display: true, text: 'Global Average Temperature, °C', color: '#333', font: { size: 12 } },
+          grid: { color: '#c8ddd4' },
+          ticks: { color: '#333' }
+        }
+      }
+    }
+  });
+
+  // ── PLOT 2: Dual-axis line – year on X, temp + pirates on Y ─────────────
+  new Chart(document.getElementById('plot2'), {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        {
+          label: 'Temperature',
+          data: temps,
+          borderColor: '#e74c3c',
+          backgroundColor: '#e74c3c',
+          borderWidth: 2,
+          pointRadius: 6,
+          pointHoverRadius: 9,
+          pointStyle: 'circle',
+          tension: 0.3,
+          yAxisID: 'yTemp'
+        },
+        {
+          label: 'Pirates',
+          data: pirates,
+          borderColor: '#2980b9',
+          backgroundColor: '#2980b9',
+          borderWidth: 2,
+          pointRadius: 6,
+          pointHoverRadius: 9,
+          pointStyle: 'circle',
+          tension: 0.3,
+          yAxisID: 'yPirates'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+          align: 'end',
+          labels: { color: '#333', boxWidth: 14, padding: 12 }
+        },
+        tooltip: {
+          callbacks: {
+            label: (item) => {
+              if (item.dataset.label === 'Temperature')
+                return ` Temp: ${item.parsed.y}°C`;
+              return ` Pirates: ${item.parsed.y.toLocaleString()}`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'Year (CE)', color: '#333', font: { size: 12 } },
+          grid: { color: '#ddd' },
+          ticks: { color: '#333' }
+        },
+        yTemp: {
+          type: 'linear',
+          position: 'left',
+          min: 13,
+          max: 16.5,
+          title: { display: true, text: 'Average Global Temperature (C)', color: '#e74c3c', font: { size: 11 } },
+          ticks: { color: '#e74c3c' },
+          grid: { color: '#ddd' }
+        },
+        yPirates: {
+          type: 'linear',
+          position: 'right',
+          min: 0,
+          title: { display: true, text: 'Number of Pirates (Approximate)', color: '#2980b9', font: { size: 11 } },
+          ticks: {
+            color: '#2980b9',
+            callback: v => v.toLocaleString()
+          },
+          grid: { drawOnChartArea: false }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
