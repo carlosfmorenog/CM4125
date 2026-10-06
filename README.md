@@ -8,7 +8,7 @@ Data Visualisation (RGU Elective Course, 4th Year). September - December 2026
 | 2 | 1 Oct | **T2** The Visualisation Design Process (VDP) | **CW briefing** and tool consolidation |
 | 3 | 8 Oct | **T3** Calling Bullsh\*t on Data Visualisations! | "cool" activity!|
 | 4 | 15 Oct | **T4** Data Loading & Exploring | guided work + **C1, P1:"What are you counting?"** |
-| 5 | 22 Oct | **T5** Data Acquisition: Data Scraping & WikiData/SPARQL | guided work + **C1, P2:"What are you counting?"** |
+| 5 | 22 Oct | **T5** Data Acquisition: Web Scraping & WikiData/SPARQL | guided work + **C1, P2:"What are you counting?"** |
 | — | **27 Oct** | **six-week floor**: last day to start a self-collected dataset |
 | 6 | 29 Oct | **Connect & Reflect** (break: no lecture, no lab) | X |
 | 7 | 5 Nov | **T6** Data Manipulation | guided work + **C2, P1: "What are you planning?"** |
