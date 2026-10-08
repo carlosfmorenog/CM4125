@@ -9,7 +9,7 @@ Data Visualisation (RGU Elective Course, 4th Year). September - December 2026
 | 3 | 8 Oct | **T03** Calling Bullsh\*t on Data Visualisations! | "cool" activity!|
 | 4 | 15 Oct | **T04** Data Loading & Exploring | guided work + **C1, P1:"What are you counting?"** |
 | 5 | 22 Oct | **T05** Data Acquisition: Web Scraping & WikiData/SPARQL | guided work + **C1, P2:"What are you counting?"** |
-| — | **27 Oct** | **six-week floor**: last day to start a self-collected dataset |
+| — | **27 Oct** | **six-week floor**: last day to start a self-collected dataset | X |
 | 6 | 29 Oct | **Connect & Reflect** (break: no lecture, no lab) | X |
 | 7 | 5 Nov | **T06** Data Manipulation | guided work + **C2, P1: "What are you planning?"** |
 | 8 | 12 Nov | **T07** Auditing data pipelines: Verify, don't type | activity **C2, P2: "What are you planning?"** |
