@@ -14,7 +14,7 @@ Data Visualisation (RGU Elective Course, 4th Year). September - December 2026
 | 7 | 5 Nov | **T06** Data Manipulation | guided work + **C2, P1: "What are you planning?"** |
 | 8 | 12 Nov | **T07** Auditing data pipelines: Verify, don't type | activity **C2, P2: "What are you planning?"** |
 | 9 | 19 Nov | **T08** Time Series Data (TSD) and Uncertainty | guided work |
-| 10 | 26 Nov | **T09** Maps & lesser-known charts (absorbs Sankey/Chord/Sunburst) | guided work + **C3, P1: "What do you have so far?"** |
+| 10 | 26 Nov | **T09** Maps & lesser-known charts | guided work + **C3, P1: "What do you have so far?"** |
 | 11 | 3 Dec | **T10** Data Visualisation with LLMs & agentic analytics | **C3, P2: "What do you have so far?"** |
 
 \*Module order and delivery subject to change
