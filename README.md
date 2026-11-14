@@ -8,13 +8,13 @@ Data Visualisation (RGU Elective Course, 4th Year). September - December 2026
 | 2 | 1 Oct | **T02** The Visualisation Design Process (VDP) | **CW briefing** and tool consolidation |
 | 3 | 8 Oct | **T03** Calling Bullsh\*t on Data Visualisations! | "cool" activity!|
 | 4 | 15 Oct | **T04** Data Loading & Exploring | guided work + **C1, P1:"What are you counting?"** |
-| 5 | 22 Oct | **T05** Data Acquisition: Web Scraping & WikiData/SPARQL | guided work + **C1, P2:"What are you counting?"** |
-| — | **27 Oct** | **six-week floor**: last day to start a self-collected dataset | X |
-| 6 | 29 Oct | **Connect & Reflect** (break: no lecture, no lab) | X |
+| 5 | 22 Oct | **T05** Data Acquisition: Web Scraping & Wikidata/SPARQL | guided work + **C1, P2:"What are you counting?"** |
+| — | **27 Oct** | | **six-week floor** — last day to start a self-collected dataset |
+| 6 | 29 Oct | **Connect & Reflect** (break — no lecture, no lab) | X |
 | 7 | 5 Nov | **T06** Data Manipulation (Part 1) | guided work + **C2, P1: "What are you planning?"** |
 | 8 | 12 Nov | **T07** Data Manipulation (Part 2) | guided work + **C2, P2: "What are you planning?"** |
-| 9 | 19 Nov | **T08** Time Series Data (TSD) and Uncertainty | guided work |
+| 9 | 19 Nov | **T08** Time Series Data (TSD) and Uncertainty | guided work + **C2, P3: "What are you planning?"**|
 | 10 | 26 Nov | **T09** Maps & lesser-known charts | guided work + **C3, P1: "What do you have so far?"** |
-| 11 | 3 Dec | **T10** Data Visualisation with LLMs & agentic analytics | **C3, P2: "What do you have so far?"** |
+| 11 | 3 Dec | **T10** CW Support | **C3, P2: "What do you have so far?"** |
 
 \*Module order and delivery subject to change
